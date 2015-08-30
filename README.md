@@ -10,8 +10,8 @@ For python 2
 
 This depends on pyPushBullet and feedparser. 
 You can follow the instruction to install them here:
-https://github.com/Azelphur/pyPushBullet
-https://pypi.python.org/pypi/feedparser
+- https://github.com/Azelphur/pyPushBullet
+- https://pypi.python.org/pypi/feedparser
 
 You will need to provide your pushbullet api key.
 You can get your API Key from https://www.pushbullet.com/#settings/account
@@ -19,4 +19,6 @@ You can get your API Key from https://www.pushbullet.com/#settings/account
 Using the script:
 
 Clone the git directory and run
+'''
 python parse_feeds.py
+'''
