@@ -19,6 +19,6 @@ You can get your API Key from https://www.pushbullet.com/#settings/account
 Using the script:
 
 Clone the git directory and run
-'''
+```
 python parse_feeds.py
-'''
+```
