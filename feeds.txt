@@ -1,0 +1,16 @@
+# Lines starting with '#' and empty lines will be ignored.
+# Enter your pushbullet api key here, without quotes. Leave a space before
+# and after '='. For example
+# pushbullet_api = abcdefgh123456789
+pushbullet_api = 
+
+# For each feed, enter the rss link on the first line,
+# followed by a + or - to indicate whether you want to
+# filter with or without the keyword
+# For example, the settings below will return all entry 
+# that contains the word 'HEVC' in them
+# Charlotte
+https://animetosho.org/feed/rss2?aids=10997
++HEVC
+
+
