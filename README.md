@@ -11,9 +11,9 @@ For python 2
 This depends on pushbullet.py and feedparser. 
 You can install them using pip
 
-'''
+```
 pip install pushbullet.py feedparser
-'''
+```
 
 You will need to provide your pushbullet api key in feeds.txt
 You can get your API Key from https://www.pushbullet.com/#settings/account
