@@ -8,12 +8,14 @@ For python 2
 
 **Dependencies**
 
-This depends on pyPushBullet and feedparser. 
-You can follow the instruction to install them here:
-- https://github.com/Azelphur/pyPushBullet
-- https://pypi.python.org/pypi/feedparser
+This depends on pushbullet.py and feedparser. 
+You can install them using pip
 
-You will need to provide your pushbullet api key.
+'''
+pip install pushbullet.py feedparser
+'''
+
+You will need to provide your pushbullet api key in feeds.txt
 You can get your API Key from https://www.pushbullet.com/#settings/account
 
 Using the script:

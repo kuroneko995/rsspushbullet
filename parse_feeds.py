@@ -1,6 +1,6 @@
 # Require https://github.com/Azelphur/pyPushBullet
 import feedparser
-from pushbullet.pushbullet import PushBullet
+from pushbullet import PushBullet
 apiKey = ""
 
 def read_config():
@@ -45,23 +45,14 @@ def write_log(entries_list):
 def push_link(entries_list):
   print apiKey
   client = PushBullet(apiKey)
-  devices = client.getDevices()
-  chrome = []
-  for device in devices:
-    if device["type"] == "chrome":
-      chrome = device
-      break
-  identity = chrome["iden"]
-
   for entry in entries_list:
-    client.pushLink(identity, entry["title"], entry["link"])
+    client.push_link(entry["title"], entry["link"])
 
 def main():
   feeds = read_config()
   previous_titles = read_log()
   new_entries = []
   for feed_info in feeds:
-    print "Parsing:", feed_info
     entries = filter_feed(feed_info)
     for entry in entries:
       if entry["title"] not in previous_titles:
